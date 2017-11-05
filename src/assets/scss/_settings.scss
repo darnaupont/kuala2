@@ -61,13 +61,13 @@
 //  56. Xy Grid
 
 @import 'util/util';
-@import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:600');
+@import url('https://fonts.googleapis.com/css?family=Lora:700|Montserrat:600');
 
 // 1. Global
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1200);
+$global-width: rem-calc(940);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #F7C400,
@@ -83,7 +83,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Lato', sans-serif;
+$body-font-family: 'Lora', serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
