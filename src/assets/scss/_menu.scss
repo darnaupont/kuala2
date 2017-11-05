@@ -1,0 +1,180 @@
+
+.hiddenmenu{
+  display: none;
+}
+.hola{
+  top:0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  animation: color .7s 1;
+  animation-fill-mode: forwards;
+  position: fixed;
+  @keyframes color
+  {
+      0%      {background-color: $primary-color;   z-index: 100;}
+      100%    {background-color: transparent;   z-index: -10;}
+  }
+}
+.menuoff{
+  top:0;
+  padding-left:12px;
+  background-color: $primary-color;
+  width:100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+    animation: menuoff 1s 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+    @keyframes menuoff
+    {
+        0%      {left:0}
+        100%    {left:-100vw;}
+    }
+}
+#menu{
+  background-color: $primary-color;
+}
+.wrapper-menu{
+  position:relative;
+  height: 100%;
+}
+header{
+  .logo{
+  margin-top:1rem;
+  color:white;}
+  position: absolute;
+  width:100%;
+  top:0;
+}
+.content-menu{
+position: absolute;
+width: 100%;
+top: 50%;
+transform: translateY(-50%);
+
+}
+.mainmenu{
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding-bottom:1rem;
+    line-height: 1.5rem;
+    li{padding-bottom:3.5rem;}
+}
+.close-button{
+  font-size: 3rem;
+  color:$white;
+}
+.menu a{
+  text-transform: uppercase;
+  color: $white;
+  padding-left:0;
+}
+.aboutus{
+  color: $white;
+  ul{
+    padding-bottom:2.5rem;
+  }
+  ul li:first-child{
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    position:relative;
+    padding-bottom:1rem;
+    &:before{
+      content: " ";
+      width: 1.5rem;
+      border-bottom: solid 3px $white;
+      position: absolute;
+      margin-left: -2rem;
+      left: 0;
+      bottom: 1.5rem;
+      z-index: 1;
+    }
+    }
+  li{
+    line-height: 1.2rem;
+    list-style: none;
+  }
+}
+// END menu general
+.menu-header{
+        background-color: rgba($white, 0.5);
+  height: 100px;
+  z-index: 9999;
+  position:fixed;
+  .logo{
+    width: 8rem;
+    height: auto;
+    #logoicon, #logotext, .black, .white, .transparent{
+          transition: fill 1s ease;
+    }
+
+    .black{ fill: $black;}
+    .white{ fill: $white;}
+    .transparent{ fill: transparent}
+  }
+  // .logo{
+  //   background: url('../../assets/img/icon/logo.svg')no-repeat;
+  //   width: 2.25rem;
+  //   height: 4rem;
+  //   // margin-top: 0.84rem;
+  //   margin-top:0;
+  //   transition: fade 2s linear;
+  // }
+  // .fulllogo{
+  //   background: url('../../assets/img/icon/kualalumpur_logo.svg')no-repeat;
+  //   width: 8rem;
+  //   height: 4rem;
+  // }
+  .mleft{
+    position:absolute;
+    left:2.35rem;
+    padding: 0.65rem;
+    padding-top:1rem;
+    // background-color: rgba(255, 255, 255, 0.72);
+  }
+  .fuckyou{
+    background-color: transparent;
+  }
+  .mright{
+    position:absolute;
+    // background-color: rgba(255, 255, 255, 0.72);
+    right: 2rem;
+    padding-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 1s ease;
+    p{
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin:0.55em 3em 1em 0.8em;
+
+    }
+  }
+  .close-button{
+    margin-top:2rem;
+    z-index: 10;
+  }
+}
+.language-active{font-weight: bold;}
+.is-reveal-open{overflow: visible !important;}
+.reveal.full {z-index: 999;}
+.colorwhite{
+  color: $white;
+}
+.colorblack{
+  color: $black;
+}
+.bgwhite{
+  transition: background-color 1s ease;
+  background-color: $white !important;
+}
+.bgblack{
+  transition: background-color 1s ease;
+  background-color: $black !important;
+}

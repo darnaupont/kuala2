@@ -1,0 +1,210 @@
+.wrapper{
+  margin-top: 100px;
+  margin-bottom:10rem;
+}
+section{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+p{color:$medium-gray}
+.yellow{
+  background-color: yellow;
+}
+.red{
+  background-color: red;
+}
+// #test-eq div{position:absolute;}
+// .large-4.cell{position:relative}
+.boxit{
+  position:relative;
+  height: 10rem;
+  p{position:absolute;
+  bottom:1rem;}
+}
+.kuala,.kuala-header{
+  position:relative;
+  z-index: 10;
+  margin-bottom: 2rem;
+  &:after{
+    content: "";
+    height:4px;
+    width:4rem;
+    background-color: $primary-color;
+    position: absolute;
+    left: 0;
+    bottom:-1rem;
+    z-index: 1;
+  }
+}
+.kuala-header:after{
+      left: 50%;
+      margin-left:-2rem;
+}
+#clientes{
+  .large-4.cell{
+    padding-top:1rem;
+    position:relative;
+    // a{
+    //   top: 0;
+    //   right: 0;
+    //   position:absolute;
+    //   z-index: 15;
+    //   width:100%;
+    //   height: 100%;
+    //   &:hover{
+    //     &:before{
+    //       width:100%;
+    //       height: 100%;
+    //       background-color: $primary-color;
+    //       opacity:0.5;
+    //       position:absolute;
+    //       z-index:2;
+    //     }
+    //
+    //   }
+    // }
+    &:hover{
+        z-index: 1;
+        background-color: rgba($primary-color, 0.5);
+        // opacity:1;
+        // z-index:2;
+  }
+  }
+
+
+  background-color: red;
+}
+// #servicios{
+//   div{padding:14rem 3rem;}
+//     .dissenyWeb{
+//
+//       // position:relative;
+//       &:hover{
+//           &:before{content:"";
+//             z-index: 1;
+//             background-color: rgba($primary-color, 0.5);}
+//       }
+//         background: url('../img/web@2x.jpg')no-repeat center center;
+//         background-size: cover;
+//         position:relative;
+//         // &:before{content:"";
+//         // opacity:1;
+//         //   top:0;
+//         //   left:0;
+//         //   position:absolute;
+//         //   width: 100%;
+//         //   height: 100%;
+//         //   z-index: -1;
+//         // background-color: $primary-color;
+//         // }
+//
+//     }
+//     .dissenyGrafic{
+//      background: url('../img/grafic@2x.jpg')no-repeat center center;
+//       background-size: cover;
+//       position:relative;
+//       a{
+//           position:absolute;
+//           top:0;
+//           right: 0;
+//           height: 100%;
+//           width: 100%;
+//           z-index: 1;
+//           padding:14rem 3rem;
+//           transition: 2s;
+//           background-color: rgba($dark-gray, 0.7);
+//         &:hover{
+//         background-color: rgba($primary-color, 0.7);
+//         transition: 2s;
+//         }
+//       h2,p{position:relative;
+//         color:white;
+//       z-index: 20;}}
+//       &:hover{
+//           // &:before{content:"";
+//           //   z-index: 1;
+//           //   position:absolute;
+//           //   top:0;
+//           //   right: 0;
+//           //   height: 100%;
+//           //   width: 100%;
+//           //
+//           //   background-color: rgba($primary-color, 0.5);}
+//       }
+//    }
+//
+//    .rediseny{
+//     background: url('../img/redisseny@2x.jpg')no-repeat center center;
+//      background-size: cover;
+//   }
+// }
+
+.callout-kuala{
+  border:1px solid $primary-color;
+  background-color: rgba($light-gray, 0.6);
+  h4,h3{width:100%;
+    color:$primary-color;
+    text-transform: uppercase;
+  span{float:right;
+      color:$medium-gray;
+      }
+    }
+  h5{
+    padding-top: 1rem;
+    color: $medium-gray;
+  }
+  p{
+    strong{color: $black;}
+  }
+}
+#servicios{
+.dissenyWeb, .dissenyGrafic, .rediseny{
+height: 28rem;
+position: relative;
+a{
+    position:absolute;
+    top:0;
+    right: 0;
+    padding: 3rem;
+    padding-top:30%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 2s;
+    background-color: rgba($dark-gray, 0.5);
+    p:nth-child(3) {
+      margin-top: 3rem;
+      visibility: hidden;
+    }
+  &:hover{
+  background-color: rgba($primary-color, 0.7);
+  transition: 2s;
+  p:nth-child(3) {
+    visibility: visible;
+  }
+  }
+h2,p{position:relative;
+  color:white;
+z-index: 20;}}
+}
+
+
+    .dissenyWeb{
+        background: url('../img/web@2x.jpg')no-repeat top center;
+        background-size: cover;
+
+    }
+    .dissenyGrafic{
+     background: url('../img/grafic@2x.jpg')no-repeat center center;
+      background-size: cover;
+   }
+
+   .rediseny{
+    background: url('../img/redisseny@2x.jpg')no-repeat center center;
+     background-size: cover;
+  }
+}
+
+#serviciosweb,#serviciosgrafico{
+  div{padding:3rem 0;}
+}
