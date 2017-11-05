@@ -2,11 +2,11 @@
 #footer{
   h2{color:$primary-color;
   span{color:$white;   font-family:'Lora', serif;}}
-  margin-top: 5rem;
   padding:3rem 3rem 0;
   background-color: $dark-gray;
   a{font-family:'Montserrat', sans-serif;}
   .footer{
+    font-size: 0.8rem;
     border-top: 4px solid $primary-color;
     margin-top:2rem;
     padding:1rem 0;
