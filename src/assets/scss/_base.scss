@@ -166,19 +166,23 @@ a{
     top:0;
     right: 0;
     padding: 3rem;
-    padding-top:30%;
+    padding-top:10rem;
     width: 100%;
     height: 100%;
     z-index: 1;
-    transition: 2s;
+    transition: 1s;
     background-color: rgba($dark-gray, 0.5);
     p:nth-child(3) {
-      margin-top: 3rem;
+      position:absolute;
+      bottom: 1rem;
+      left:50%;
+      margin-left:-3rem;
+      // margin-top: 3rem;
       visibility: hidden;
     }
   &:hover{
   background-color: rgba($primary-color, 0.7);
-  transition: 2s;
+  transition: 0.5s;
   p:nth-child(3) {
     visibility: visible;
   }
