@@ -112,6 +112,7 @@ transform: translateY(-50%);
     height: auto;
     #logoicon, #logotext, .black, .white, .transparent{
           transition: fill 1s ease;
+          fill: $primary-color;
     }
 
     .black{ fill: $black;}
