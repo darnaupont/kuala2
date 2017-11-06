@@ -1,7 +1,7 @@
 // //footer
 #footer{
   h2{color:$primary-color;
-  span{color:$white;   font-family:'Lora', serif;}}
+  span{color:$white;   font-family:'Lora', serif; letter-spacing: 1px;}}
   padding:3rem 3rem 0;
   background-color: $dark-gray;
   a{font-family:'Montserrat', sans-serif;}
@@ -10,9 +10,9 @@
     border-top: 4px solid $primary-color;
     margin-top:2rem;
     padding:1rem 0;
-    .footer-left{li{ padding: 0.35rem 0; margin-right: 0.5rem}}
-    .footer-center{li{margin-left:0.5rem}}
-    .footer-right{li{padding: 0.35rem 0; margin-left: 0.5rem}}
+    .footer-left{li{margin-right: 0.5rem}}
+    .footer-center{li{margin-left:0.5rem; a{color:$white;}}}
+    .footer-right{li{margin-left: 0.5rem}}
   }
 }
 //

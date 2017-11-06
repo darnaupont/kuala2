@@ -4,13 +4,32 @@ body{
 .wrapper{
     background-color: $white;
   padding-top: 100px;
-  padding-bottom:10rem;
+  padding-bottom:2rem;
+    @include breakpoint(medium){
+      padding-top: 100px;
+      padding-bottom:10rem;
+    }
 }
 section{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include breakpoint(medium){
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 p{color:$medium-gray}
+figure{
+  img{
+  max-height: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  }
+}
+.kuala-link{
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
 .yellow{
   background-color: yellow;
 }
@@ -217,6 +236,8 @@ z-index: 20;}}
   div{padding:3rem 0;}
 }
 .contacto{
+  padding-top:2rem;
+  @include breakpoint(medium){
   height: 60vh;
   // padding-top:10rem;
   position: relative;
@@ -225,4 +246,5 @@ z-index: 20;}}
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);}
-}
+}}
+.hero{margin-bottom:2rem;}
