@@ -2,7 +2,7 @@ body{
   background-color: $dark-gray;
 }
 .wrapper{
-    background-color: $white;
+  background-color: $white;
   padding-top: 100px;
   padding-bottom:2rem;
     @include breakpoint(medium){
@@ -23,7 +23,7 @@ figure{
   img{
   max-height: 3rem;
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
   }
 }
 .kuala-link{

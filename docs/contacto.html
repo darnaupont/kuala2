@@ -8,6 +8,12 @@
     <title>KualalumpurStudio: Diseño y UX en Mallorca</title>
     <meta name="description" content="Ponemos a tu disposición nuestros conocimientos para guiarte en la elección de la alternativa que más se adapte a tus necesidades y presupuesto."/>
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div class="tranlucid"></div>
@@ -126,18 +132,18 @@
         <h1 class="kuala">Contacto </h1>
           </div>
         </div>
-        <form action="">
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyC5XFERpUlUeYB4DTBFbIzwrig0m8Wip3L0rN20Q-iFklyBrA/exec">
             <div class="grid-x">
               <div class="large-8 large-offset-2 cell">
                 <div class="grid-x grid-padding-x">
               <div class="medium-6 cell form-left">
-                <input type="text" id="name" name="name" placeholder="Nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
               </div>
               <div class="medium-6 cell form-right">
                 <input type="email" id="email" name="email" placeholder="e-mail" required>
               </div>
               <div class="small-12 cell">
-              <textarea name="" id="" rows="5" placeholder="Mensaje"></textarea>
+              <textarea name="mensaje" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
               </div>
     
             <div class="small-12 cell">
@@ -150,6 +156,17 @@
     
             </div>
           </form>
+          <div style="display:none; margin:4rem; margin-top:10rem;" id="thankyou_message">
+            <div class="grid-x grid-padding-x">
+              <div class="large-8 large-offset-2 cell">
+                <hr>
+                <h2><strong>Perfecto!</strong></h2>
+                <h5>Pronto nos pondremos en contacto contigo.</h5>
+    
+            <h4><b>Gracias!</b></h4>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </div>
@@ -190,5 +207,6 @@
       </div>
     </div>
     <script src="assets/js/app.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
   </body>
 </html>
